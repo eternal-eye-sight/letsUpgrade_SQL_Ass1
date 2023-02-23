@@ -1,0 +1,5 @@
+select s.name AS Salesman, c.cust_name, c.city    #alias Salesman is used to get name for salesman table, s refers to salesman table and c refers to customer table
+from Salesman s
+join Customers c                                  #using join command to join table 1 with table 2 
+on s.salesman_id = c.salesman_id                  #based on salesman_id
+where s.city = c.city;                            #filtering data to display only those having matching city names
